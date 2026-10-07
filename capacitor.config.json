@@ -1,0 +1,14 @@
+{
+  "appId": "com.sotoqu.pos",
+  "appName": "Soto Qu 1.0",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false
+  }
+}

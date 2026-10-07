@@ -1,0 +1,8 @@
+{
+  "name": "Soto Qu 1.0",
+  "description": "Aplikasi kasir resto Android dengan fitur meja interaktif, stok bahan, laporan omset, dan cetak struk Bluetooth yang praktis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
