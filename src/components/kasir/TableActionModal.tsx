@@ -49,9 +49,15 @@ export const TableActionModal: React.FC<TableActionModalProps> = ({
       />
 
       {/* Sheet Container */}
-      <div className="relative w-full max-h-[80vh] bg-stone-900 text-stone-100 rounded-t-3xl shadow-2xl flex flex-col z-10 animate-in slide-in-from-bottom duration-250 border-t border-stone-800 p-4 space-y-3.5">
+      <div 
+        className="relative w-full max-w-xl mx-auto max-h-[85vh] bg-stone-900 text-stone-100 rounded-t-2xl sm:rounded-t-3xl shadow-2xl flex flex-col z-10 animate-in slide-in-from-bottom duration-250 border-t border-stone-800 p-4 space-y-3.5 pb-8 sm:pb-4"
+        style={{ paddingBottom: 'max(2rem, calc(1rem + env(safe-area-inset-bottom, 0px)))' }}
+      >
         {/* Grab Handle */}
-        <div className="w-12 h-1.5 bg-stone-700 rounded-full mx-auto -mt-1.5 mb-1 shrink-0" />
+        <div 
+          onClick={onClose}
+          className="w-12 h-1.5 bg-stone-700/80 rounded-full mx-auto -mt-1.5 mb-1 shrink-0 cursor-pointer hover:bg-stone-600 transition-colors" 
+        />
 
         {/* Header */}
         <div className="flex items-center justify-between border-b border-stone-800 pb-3">

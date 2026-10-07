@@ -1,4 +1,4 @@
-package com.baksoqu.pos;
+package com.sotoqu.pos;
 
 import com.getcapacitor.BridgeActivity;
 

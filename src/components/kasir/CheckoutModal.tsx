@@ -108,9 +108,12 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
       />
 
       {/* Sheet Container */}
-      <div className="relative w-full max-h-[92vh] bg-stone-900 text-stone-100 rounded-t-3xl shadow-2xl flex flex-col z-10 animate-in slide-in-from-bottom duration-300 border-t border-stone-800">
+      <div className="relative w-full max-w-2xl mx-auto max-h-[92vh] bg-stone-900 text-stone-100 rounded-t-2xl sm:rounded-t-3xl shadow-2xl flex flex-col z-10 animate-in slide-in-from-bottom duration-300 border-t border-stone-800 overflow-hidden">
         {/* Grab Handle */}
-        <div className="w-12 h-1.5 bg-stone-700 rounded-full mx-auto my-2.5 shrink-0" />
+        <div 
+          onClick={onClose}
+          className="w-12 h-1.5 bg-stone-700/80 rounded-full mx-auto my-2.5 shrink-0 cursor-pointer hover:bg-stone-600 transition-colors" 
+        />
 
         {/* Header */}
         <div className="px-4 pb-3 flex items-center justify-between border-b border-stone-800">
@@ -311,7 +314,10 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         </div>
 
         {/* Footer Checkout Actions */}
-        <div className="p-3.5 bg-stone-950 border-t border-stone-800 shrink-0 space-y-2">
+        <div 
+          className="p-3.5 bg-stone-950 border-t border-stone-800 shrink-0 space-y-2 pb-8 sm:pb-4"
+          style={{ paddingBottom: 'max(2rem, calc(1rem + env(safe-area-inset-bottom, 0px)))' }}
+        >
           {/* Primary Action: Proses Bayar & Print Struk */}
           <button
             onClick={() => handleProcessPayment('bluetooth')}

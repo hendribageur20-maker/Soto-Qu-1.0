@@ -1,6 +1,6 @@
 {
-	"appId": "com.baksoqu.pos",
-	"appName": "Bakso Qu 1.0",
+	"appId": "com.sotoqu.pos",
+	"appName": "Soto Qu 1.0",
 	"webDir": "dist",
 	"bundledWebRuntime": false,
 	"server": {
